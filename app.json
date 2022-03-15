@@ -2,8 +2,8 @@
     "name": "Dion Music",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "logo": ["https://telegra.ph/file/d370ad4f70d82186536d0.jpg"]
     "repository": "https://github.com/SeorangDion/DionMusicBot",
+    "logo": "https://telegra.ph/file/d370ad4f70d82186536d0.jpg",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
