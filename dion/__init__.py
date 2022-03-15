@@ -1,7 +1,7 @@
 import asyncio
 import importlib
 from pyrogram import Client
-from oda import config
+from dion import config
 
 
 SUDO_USERS = config.SUDO_USERS
