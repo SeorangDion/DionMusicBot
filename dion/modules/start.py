@@ -12,7 +12,7 @@ home_text_pm = (
     + "add me to your group."
 )
 
-keyboard = InlineKeyboardMarkup(
+keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
@@ -45,7 +45,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     await message.reply(
             home_text_pm,
-            reply_markup=home_keyboard_pm,
+            reply_markup=keyboard_pm,
         )
 
     
