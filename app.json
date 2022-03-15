@@ -2,6 +2,7 @@
     "name": "Dion Music",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
+    "logo": ["https://telegra.ph/file/d370ad4f70d82186536d0.jpg"]
     "repository": "https://github.com/SeorangDion/DionMusicBot",
     "stack": "container",
     "env": {
@@ -17,17 +18,17 @@
         "ASSID": {
             "description": "fill with telegram id of account",
             "required": true,
-            "value": ""
+            "value": "5114293734"
         },
         "ASSNAME": {
             "description": "fill with telegram name of account",
             "required": true,
-            "value": ""
+            "value": "Dion Music Assistant²"
         },
         "ASSUSERNAME": {
             "description": "fill with telegram username of account without @",
             "required": true,
-            "value": ""
+            "value": "DionMusicAssistant_2"
         },
         "BOT_ID": {
             "description": "fill with telegram id of bot",
@@ -67,12 +68,12 @@
         "SUDO_USERS": {
             "description": "fill with the user id who can access all function in your bot (separate with space).",
             "required": true,
-            "value": ""
+            "value": "1708159796 1867048626 1037155568 1878075436 5114293734"
         },
         "DURATION_LIMIT": {
             "description": "filled, don't change this !",
             "required": true,
-            "value": ""
+            "value": "3600"
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
