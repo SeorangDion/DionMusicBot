@@ -74,8 +74,8 @@ async def help(client: Client, message: Message):
                     ),
                     InlineKeyboardButton(
                         "📢 Support", url=f"https://t.me/{SUPPORT}"
-                    )
+                    ),
                 ]
             ]
         )
-    )l
+    )
