@@ -7,7 +7,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from dion import app
-from dion.config import que
+from dion.config import BOT_USERNAME, que
 from dion.database.queue import (
     is_active_chat,
     add_active_chat,
@@ -52,7 +52,7 @@ async def member_permissions(chat_id: int, user_id: int):
 from dion.utils.administrator import adminsOnly
 
 
-@app.on_message(command(["pause", "dpause"]) & other_filters)
+@app.on_message(command(["pause", f"pause@{BOT_USERNAME}", "dpause", f"dpause@{BOT_USERNAME}"]) & other_filters)
 async def pause(_, message: Message):
     if message.sender_chat:
         return await message.reply_text(
@@ -79,7 +79,7 @@ async def pause(_, message: Message):
     )
 
 
-@app.on_message(command(["resume", "dresume"]) & other_filters)
+@app.on_message(command(["resume", f"resume@{BOT_USERNAME}", "dresume", f"dresume@{BOT_USERNAME}"]) & other_filters)
 async def resume(_, message: Message):
     if message.sender_chat:
         return await message.reply_text(
@@ -107,7 +107,7 @@ async def resume(_, message: Message):
         )
 
 
-@app.on_message(command(["end", "dend"]) & other_filters)
+@app.on_message(command(["end", f"end@{BOT_USERNAME}", "dend", f"dend@{BOT_USERNAME}"]) & other_filters)
 async def stop(_, message: Message):
     if message.sender_chat:
         return await message.reply_text(
@@ -135,7 +135,7 @@ async def stop(_, message: Message):
         )
 
 
-@app.on_message(command(["skip", "dskip"]) & other_filters)
+@app.on_message(command(["skip", f"skip@{BOT_USERNAME}", "dskip", f"dskip@{BOT_USERNAME}"]) & other_filters)
 async def skip(_, message: Message):
     if message.sender_chat:
         return await message.reply_text(
@@ -173,7 +173,7 @@ async def skip(_, message: Message):
             )
 
 
-@app.on_message(filters.command(["cleandb", "oc"]))
+@app.on_message(filters.command(["cleandb", "cleandatabase", "cdb"]))
 async def stop_cmd(_, message):
     if message.sender_chat:
         return await message.reply_text(
