@@ -9,19 +9,15 @@ from dion.config import BOT_USERNAME, BOT_NAME, SUPPORT, UPDATE
 home_text_pm = (
     f"Hey there! My name is {BOT_NAME}. I can play music on"
     + "group with lots of useful commands, feel free to "
-    + "add me to your group."
+    + "add me to your group. Type /help to see the commands"
 )
 
 keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Help ❓",
-                url=f"t.me/{BOT_USERNAME}?start=help",
-            ),
-            InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/SeorangDion/DionMusicBot",
+                text="Add Me To Your Group 🎉",
+                url=f"http://t.me/{BOT_USERNAME}?startgroup=kontol",
             ),
         ],
         [
@@ -29,13 +25,13 @@ keyboard_pm = InlineKeyboardMarkup(
                 text="Updates 💻",
                 url=f"t.me/{UPDATE}",
             ),
-            InlineKeyboardButton(text="Support 👨", url=f"t.me/{SUPPORT}"),
+            InlineKeyboardButton(text="Support 📢", url=f"t.me/{SUPPORT}"),
         ],
         [
             InlineKeyboardButton(
-                text="Add Me To Your Group 🎉",
-                url=f"http://t.me/{BOT_USERNAME}?startgroup=kontol",
-            )
+                text="Repo 🛠",
+                url="https://github.com/SeorangDion/DionMusicBot",
+            ),
         ],
     ]
 )
