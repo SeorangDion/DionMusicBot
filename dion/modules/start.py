@@ -1,3 +1,6 @@
+# ⚠️ If you don't want /start in your bot
+# you can delete this file 
+
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
