@@ -6,14 +6,14 @@ dnspython
 ffmpeg-python
 future
 gitpython
-pyrogram
-hurry.filesize
 heroku3
+hurry.filesize
 motor
 pillow
 psutil
-python-dotenv
 pyromod
+pyrogram==1.4.7
+python-dotenv
 py-tgcalls==0.8.2
 requests
 search-engine-parser
